@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 5px solid red;
- }
+ } */
 .header {
     background: url(https://media.tacdn.com/media/attractions-splice-spp-720x480/0e/91/60/a9.jpg);
     opacity: 75%;
@@ -8,6 +8,7 @@
     background-size: cover;
     height: 100vh;
     width:100%;
+    text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
@@ -26,32 +27,43 @@ grid-row-start: 2;
 grid-row-end: 4;
 align-self: end;
 justify-self: start;
+width: 293px;
 }
 
 #header-jake img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
   }
 
 #header-blurb {
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 4;
     font-size: 25px;
     align-self: end;
     justify-self: start;
+    padding-bottom: 6px;
+    
     }
   
 #header-button {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
-    font-size: 25px;
-    align-self: center;
-    justify-self: center;
+    font-size: 15px;
+    align-self: start;
+    justify-self: start;
+    text-transform: uppercase;
+    background-color: white ;
+    opacity: 75%;
+    color: black;
+    border: 2px solid #555555;
+    padding: 10px 24px;
+    border-radius: 4px;
 }
 .header > * { 
 color: white;
@@ -68,18 +80,21 @@ font-family: 'Times New Roman';
 
 #nav-bar {
     width: 100%;
-    margin: auto;
+    margin: 20px 0px;
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: cornsilk;
 }
 
-#nav-bar ul li {
+#nav-bar ul li{
     display: inline-block;
     justify-items: center;
-    margin: 0,10px;
+    margin: 0 20px;
+    text-transform: uppercase;
 }
 .bio { 
+    margin: 50px 10px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -90,8 +105,6 @@ font-family: 'Times New Roman';
 }
 
 #about-personal-bio {
-    Width: 200px;
-    height:200px;
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -113,8 +126,8 @@ font-family: 'Times New Roman';
 
     grid-column-start: 3;
     grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     align-self: flex-start;
     justify-self: flex-start;
 }
@@ -128,4 +141,8 @@ font-family: 'Times New Roman';
     grid-row-end: 4;
     align-self: center;
     justify-self: center;
+    border: 2px solid black;
+    border-radius: 120px;
+    margin: 50px;
+    padding: 2px;
 } 
