@@ -26,27 +26,6 @@
                     <p id="about-profesional-bio"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eius consequatur porro earum reprehenderit blanditiis odit quo recusandae voluptatibus similique adipisci fugit, laboriosam aliquam exercitationem ducimus voluptates repellendus reiciendis possimus!</p>
                     <p id="about-what-nicole-says">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quos at vero itaque unde beatae laborum provident recusandae error numquam libero pariatur optio molestiae, impedit reprehenderit soluta aut voluptatibus mollitia? </p>
                 </article>        
-                <article class="skills-and-qualifications">
-                    <h2 id="software-development-header">Software <br> Development</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Ruby</li>
-                        </ul>
-                    <h2 id="non-software-development-header">Non-Software <br> Development</h2>
-                        <ul>
-                            <li>Stakeholder Engagement</li>
-                            <li>External Comms Specialist</li>
-                            <li>Manager of Highperforming Teams</li>
-                        </ul>
-                    <h2 id="qualifications-header">Qualifications</h2>
-                        <ul id="qualifications-list"> 
-                            <li>Accedemy Xi Transform - Software Engineering</li>
-                            <li>BSc</li>
-                        </ul>
-                </article>
-            </section>
             <section class="projects">
                     <article class="project-card">
                         <img src="Images/Jake Logo.jpeg" alt="This Website" style="width:100%">
@@ -71,7 +50,18 @@
                     </article>       
             </section>
             <section class="form">
-                <h2 id="form-heading">If you would like to work together please enter your details in the form below.</h2>  
+                <h2 id="form-heading">If you would like to work together please enter your details in the form below.</h2> 
+                <form action="LOCATION_TBD">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="firstname" placeholder="Your name..">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="tell-me">Tell me about your project</label>
+                    <textarea id="tell-me" name="subject" placeholder="Lets work together.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                  </form> 
             </section>
         </main>
         <footer>
